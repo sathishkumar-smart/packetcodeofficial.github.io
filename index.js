@@ -2,13 +2,13 @@ function validate()
 {
 	if(document.getElementById("Advanced").checked)
 	{
-      window.location="Advanced.html"
+      window.location="index.html"
 	}else if(document.getElementById("Simple").checked)
 	{
       window.location="simple.html"
 	}
 	else{
-		window.location="Advanced.html"
+		window.location="index.html"
 	}
 }
 function AC()

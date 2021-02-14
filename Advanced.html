@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>  
+    <div class="form-check " id="view" onclick="validate()">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Simple">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Simple
+          </label>
+        <input style="margin-left: 5px;" class="form-check-input" type="radio" name="flexRadioDefault" id="Advanced" checked>
+        <label  class="form-check-label" for="flexRadioDefault1" style="margin-left: 40px;">
+          Advanced
+        </label>                                                                
+        
+      </div>
+        <div class="box">
+        <h1>Calculator</h1>
+        <input type="text"  class="displaydesign" id="finaloutput"><br/>
+        <button type="button" class="buttondesign" onclick="display('(')">(</button>	
+        <button type="button" class="buttondesign" onclick="display('log')">log</button>
+        <button type="button" class="buttondesign" onclick="display(')')">)</button>
+        <button type="button" class="buttondesign" onclick="AC()">AC</button>
+        <button type="button" class="buttondesign" onclick="CE()">C</button>
+        <button type="button" class="buttondesign" onclick="display('^')">x<sup>y</sup></button><br>
+        <button type="button" class="buttondesign" onclick="display('7')">7</button>
+        <button type="button" class="buttondesign" onclick="display('8')">8</button>
+        <button type="button" class="buttondesign" onclick="display('9')">9</button>
+        <button type="button" class="buttondesign" onclick="display('*')">*</button>
+        <button type="button" class="buttondesign" onclick="display('√')">√</button>
+        <button type="button" class="buttondesign" onclick="display('9')">tan</button><br>
+        
+        <button type="button" class="buttondesign" onclick="display('4')">4</button>
+        <button type="button" class="buttondesign" onclick="display('5')">5</button>
+        <button type="button" class="buttondesign" onclick="display('6')">6</button>
+        <button type="button" class="buttondesign" onclick="display('-')">-</button>
+        <button type="button" class="buttondesign" onclick="display('sin')">sin</button>
+        <button type="button" class="buttondesign" onclick="pi('&#8508;')">&#8508;</button><br>
+        <button type="button" class="buttondesign" onclick="display('1')">1</button>
+        <button type="button" class="buttondesign" onclick="display('2')">2</button>
+        <button type="button" class="buttondesign" onclick="display('3')">3</button>
+        <button type="button" class="buttondesign" onclick="display('+')">+</button>
+        <button type="button" class="buttondesign" onclick="display('cos')">cos</lbutton>
+        <button type="button" class="buttondesign" onclick="display('e')">e</button><br>
+        <button type="button" class="buttondesign" onclick="display('0')">0</button>
+        <button type="button" class="buttondesign" onclick="display('.')">.</button>
+        <button type="button" class="buttondesign" onclick="display('/')">/</button>
+        <button type="button" class="buttondesign" onclick="percent()">%</button>
+        <button type="button" class="buttondesign" onclick="display('x!')">x!</button>
+        <button type="button" class="buttondesign" onclick="solve()">=</button>
+    </div>
+    <Script src="index.js"></Script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
